@@ -21,7 +21,7 @@ def text_box():
     csv_writer = csv.writer(file, delimiter=",")
     csv_writer.writerow([text])
     return render_template("home.html")
-def lauch_opti()
+def lauch_opti():
     os.remove("C:/Users/pc/Desktop/Enpc/2A/MOPSI/Results.csv")
     os.system("glpsol -m C:/Users/pc/Desktop/Enpc/2A/MOPSI/Tricount.mod")
 if __name__ == '__main__':
